@@ -1,0 +1,334 @@
+.nav-sec {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 1rem 16rem 1rem;
+}
+
+.menu-icon {
+  color: #000000;
+}
+
+.btn-log-sign {
+  padding: 0.3rem 0.6rem;
+  background-color: #ac1121;
+  color: #ffffff;
+  border-radius: 0.1rem;
+  font-size: 0.8rem;
+}
+
+.login {
+  margin-right: 0.5rem;
+}
+
+.login-signup {
+  display: none;
+}
+
+.nav-logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.search {
+  border-radius: 0.5rem;
+  outline: none;
+  display: none;
+}
+
+.profile {
+  margin-left: 0.5rem;
+}
+
+.character-name {
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: bold;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.8rem;
+}
+
+.character-para {
+  padding-left: 10rem;
+  margin-top: 1rem;
+  font-style: italic;
+  display: none;
+}
+
+.character-btn {
+  padding: 0.3rem 0.6rem;
+  background-color: #ac1121;
+  color: #ffffff;
+  margin-left: 1rem;
+  border-radius: 0.1rem;
+}
+
+.thor {
+  background-image: url("mobile-view-img/thor.jpg");
+  color: #ffffff;
+  text-align: center;
+  height: 10rem;
+}
+
+.captian-america {
+  background-image: url("mobile-view-img/captian-america.jpg");
+  padding-top: 20%;
+  height: 10rem;
+  color: #ffffff;
+  text-align: center;
+}
+.hulk {
+  background-image: url("mobile-view-img/hulk.jpg");
+  padding-top: 20%;
+  height: 10rem;
+  color: #ffffff;
+  text-align: center;
+}
+.ironman {
+  background-image: url("mobile-view-img/ironman.jpg");
+  padding-top: 20%;
+  height: 10rem;
+  color: #ffffff;
+  text-align: center;
+}
+.spider-man {
+  background-image: url("mobile-view-img/spider-man.png");
+  padding-top: 20%;
+  height: 10rem;
+  color: #ffffff;
+  text-align: center;
+}
+
+.slide {
+  position: absolute;
+  top: 2.8rem;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  margin-bottom: 10rem;
+  opacity: 1;
+  transition: 1s ease-in-out;
+  overflow: hidden;
+}
+
+button {
+  position: absolute;
+  top: 22%;
+  border: none;
+  background: rgba(32, 26, 26, 0.527);
+  color: rgb(243, 243, 243);
+  padding: 10px 16px;
+  font-size: 30px;
+  z-index: 1000;
+  transition: 0.5s ease-in-out;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+button:hover {
+  background: #ac1121;
+}
+
+.dots_container {
+  display: flex;
+  margin: 5px auto;
+  width: fit-content;
+}
+
+.dots {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background: #ffffff;
+  margin: 4px;
+  z-index: 1;
+}
+
+.dots:hover {
+  background: #ac1121 !important;
+}
+
+.video-trailer {
+  width: 370px;
+  height: 210px;
+}
+.movies-list {
+  display: flex;
+  justify-content: space-around;
+}
+.movie-size {
+  width: 80px;
+  height: 127px;
+  padding: 0.3rem 1.6rem 1rem 0.5rem;
+  margin: 0.3rem;
+  color: #ffffff;
+}
+
+.heading-name {
+  color: #ffffff;
+  text-align: center;
+  margin-top: 2rem;
+  letter-spacing: 4rem;
+  padding-top: 3rem;
+  font-size: 0.5rem;
+}
+
+.captian-america-movies {
+  margin-top: -6.2rem;
+}
+.first-avenger {
+  background-image: url("captian/captian_america_the_first_avenger.jpg");
+}
+.civil-war {
+  background-image: url("captian/captain-america-civil-war-mcu.jpg");
+}
+.winter-soilder {
+  background-image: url("captian/winter-soilder.jfif");
+}
+.spiderman1 {
+  background-image: url("captian/spiderman1.png");
+}
+.spiderman2 {
+  background-image: url("captian/spiderman2.jpg");
+}
+.spiderman3 {
+  background-image: url("captian/spiderman3.jpg");
+}
+.ironman1 {
+  background-image: url("captian/ironman1.jpg");
+}
+.ironman2 {
+  background-image: url("captian/ironman2.jpg");
+}
+.ironman3 {
+  background-image: url("captian/ironman3.jfif");
+}
+.thor1 {
+  background-image: url("captian/thor.jpg");
+}
+.thor-ragnork {
+  background-image: url("captian/thor-ragnork.jpg");
+}
+.thor-darkworld {
+  background-image: url("captian/thor-dark-world.jpg");
+}
+
+@media screen and (min-width: 600px) {
+  .menu-icon {
+    display: none;
+  }
+
+  .login-signup {
+    display: initial;
+  }
+
+  button {
+    top: 39%;
+  }
+
+  .thor {
+    background-image: url("characters/thor.jpg");
+    padding-top: 0rem;
+    height: 37rem;
+    text-align: start;
+  }
+  .character-name {
+    font-size: 6rem;
+    padding-top: 10rem;
+    padding-left: 10rem;
+    margin-bottom: 0rem;
+  }
+
+  .character-para {
+    margin-bottom: 2rem;
+    display: inherit;
+  }
+
+  .character-btn {
+    padding: 0.4rem 0.8rem;
+    margin-left: 10rem;
+    border-radius: 0.1rem;
+  }
+
+  .captian-america {
+    background-image: url("characters/captian-america.jpg");
+    padding-top: 0rem;
+    height: 37rem;
+    text-align: start;
+  }
+
+  .hulk {
+    background-image: url("characters/hulk.jpg");
+    padding-top: 0rem;
+    height: 37rem;
+    text-align: start;
+  }
+
+  .ironman {
+    background-image: url("characters/ironman.jpg");
+    padding-top: 0rem;
+    height: 37rem;
+    text-align: start;
+  }
+
+  .spider-man {
+    background-image: url("characters/spider-man.png");
+    padding-top: 0rem;
+    height: 37rem;
+    text-align: start;
+  }
+
+  .nav-sec {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 1rem 36rem 1rem;
+  }
+
+  .captian-america-movies {
+    margin-top: -1.5rem;
+    background-color: black;
+  }
+  .captian-america-movies-list {
+    display: flex;
+    justify-content: center;
+    padding: 0rem 1rem;
+    background-color: #000000;
+  }
+
+  .video-trailer {
+    width: 1035px;
+    height: 593px;
+  }
+
+  .movie-size {
+    width: 281px;
+    height: 127px;
+    padding: 1rem;
+    margin-bottom: 0.1rem;
+    color: #ffffff;
+  }
+
+  .movies-list {
+    display: inline-block;
+    margin-top: 5rem;
+  }
+
+  .heading-name {
+    color: #ffffff;
+    text-align: center;
+    margin-top: 2rem;
+    letter-spacing: 4rem;
+    padding-top: 3rem;
+  }
+
+  #movies {
+    margin-top: -1.92rem;
+  }
+}

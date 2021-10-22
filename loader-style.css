@@ -1,0 +1,15 @@
+body{
+    background-color: #000000;
+}
+section {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 40%;
+}
+
+.stone {
+    width: 3%;
+    border-radius: 100%;
+    margin: 1rem;
+}

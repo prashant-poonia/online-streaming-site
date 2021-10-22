@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MARVEL-AGE</title>
+
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Google Fonts -->
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+</head>
+
+<body>
+  <header>
+    <section class="nav-sec">
+      <a href="#" class="menu-icon"><i class="fas fa-bars"></i></a>
+      <div class="login-signup">
+        <a href="login.html" class="login btn-log-sign">Login</a>
+        <a href="signup.html" class="signup btn-log-sign">SignUp</a>
+      </div>
+      <h1 class="nav-logo">MARVEL - AGE</h1>
+      <div>
+        <input type="text" class="search" />
+        <!-- <i class="fas fa-search"></i> -->
+        <i class="fas fa-user-circle profile"></i>
+      </div>
+    </section>
+
+    <section class="carousel" data-autoplay="true">
+      <div class="thor slide">
+        <h1 class="character-name">THOR</h1>
+        <p class="character-para">
+          Thor is depicted as one of the most powerful of the Asgardians,<br />
+          an ancient alien civilization with long ties to Earth,<br />
+          who humans consider to be gods.
+        </p>
+        <a href="#" class="character-btn">Watch <i class="fas fa-play-circle"></i></a>
+      </div>
+      <div class="captian-america slide">
+        <h1 class="character-name">
+          CAPTIAN <br />
+          AMERICA
+        </h1>
+        <p class="character-para">
+          Thor is depicted as one of the most powerful of the Asgardians,<br />
+          an ancient alien civilization with long ties to Earth,<br />
+          who humans consider to be gods.
+        </p>
+        <a href="#" class="character-btn">Watch <i class="fas fa-play-circle"></i></a>
+      </div>
+      <div class="hulk slide">
+        <h1 class="character-name">HULK</h1>
+        <p class="character-para">
+          Thor is depicted as one of the most powerful of the Asgardians,<br />
+          an ancient alien civilization with long ties to Earth,<br />
+          who humans consider to be gods.
+        </p>
+        <a href="#" class="character-btn">Watch <i class="fas fa-play-circle"></i></a>
+      </div>
+      <div class="spider-man slide">
+        <h1 class="character-name">SPIDER MAN</h1>
+        <p class="character-para">
+          Thor is depicted as one of the most powerful of the Asgardians,<br />
+          an ancient alien civilization with long ties to Earth,<br />
+          who humans consider to be gods.
+        </p>
+        <a href="#" class="character-btn">Watch <i class="fas fa-play-circle"></i></a>
+      </div>
+      <div class="ironman slide">
+        <h1 class="character-name">IRON MAN</h1>
+        <p class="character-para">
+          Thor is depicted as one of the most powerful of the Asgardians,<br />
+          an ancient alien civilization with long ties to Earth,<br />
+          who humans consider to be gods.
+        </p>
+        <a href="#" class="character-btn">Watch <i class="fas fa-play-circle"></i></a>
+      </div>
+      <button class="prev" onclick="prev()">
+        <i class="fas fa-angle-left"></i>
+      </button>
+      <button class="next" onclick="next()">
+        <i class="fas fa-angle-right"></i>
+      </button>
+    </section>
+
+    <div class="dots_container" id="indicator"></div>
+  </header>
+  <!-- Movie Trailer sections -->
+  <section class="captian-america-movies">
+    <h2 class="heading-name">CAPTIAN-AMERICA</h2>
+    <section class="captian-america-movies-list">
+      <div class="trailer">
+        <video class="video-trailer" controls id="captian-america-video">
+          <source id="captian-america-video-source" src="trailers/First Avenger.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="movies-list">
+        <h2 class="first-avenger movie-size"
+          onclick="handleVideoSrc('captian-america-video', 'trailers/First Avenger.mp4')">
+          Captain America: The First Avenger
+        </h2>
+
+        <h2 class="civil-war movie-size"
+          onclick="handleVideoSrc('captian-america-video', 'trailers/Captain America_ Civil War.mp4')">
+          Captain America: Civil War
+        </h2>
+        <h2 class="winter-soilder movie-size"
+          onclick="handleVideoSrc('captian-america-video', 'trailers/Captain America_ The Winter Soldier.mp4')">
+          Captain America: The Winter Soldier
+        </h2>
+      </div>
+    </section>
+  </section>
+  <section class="captian-america-movies" id="movies">
+    <h2 class="heading-name">SPIDER-MAN</h2>
+    <section class="captian-america-movies-list">
+      <div class="trailer">
+        <video class="video-trailer" controls id="spider-man-video">
+          <source id="spider-man-video-source" src="trailers/Spider-man 3.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="movies-list">
+        <h2 class="spiderman3 movie-size" onclick="handleVideoSrc('spider-man-video', 'trailers/Spider-man 3.mp4')">
+          Captain America: The Winter Soldier
+        </h2>
+        <h2 class="spiderman1 movie-size" onclick="handleVideoSrc('spider-man-video', 'trailers/Spider-Man 1.mp4')">
+          Captain America: The First Avenger
+        </h2>
+        <h2 class="spiderman2 movie-size" onclick="handleVideoSrc('spider-man-video', 'trailers/SPIDER-MAN 2.mp4')">
+          Captain America: Civil War</h2>
+      </div>
+    </section>
+  </section>
+  <section class="captian-america-movies" id="movies">
+    <h2 class="heading-name">IRON-MAN</h2>
+    <section class="captian-america-movies-list">
+      <div class="trailer">
+        <video class="video-trailer" controls id="iron-man-video">
+          <source id="iron-man-video-source" src="trailers/Iron Man 1.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="movies-list">
+        <h2 class="ironman1 movie-size" onclick="handleVideoSrc('iron-man-video', 'trailers/Iron Man 1.mp4')">
+          Captain America: The First Avenger
+        </h2>
+        <h2 class="ironman2 movie-size" onclick="handleVideoSrc('iron-man-video', 'trailers/Iron Man 2.mp4')">Captain
+          America: Civil War</h2>
+        <h2 class="ironman3 movie-size" onclick="handleVideoSrc('iron-man-video', 'trailers/Iron Man 3.mp4')">
+          Captain America: The Winter Soldier
+        </h2>
+      </div>
+    </section>
+  </section>
+  <section class="captian-america-movies" id="movies">
+    <h2 class="heading-name">THOR</h2>
+    <section class="captian-america-movies-list">
+      <div class="trailer">
+        <video class="video-trailer" controls id="thor-video">
+          <source id="thor-video-source" src="trailers/Thor - Trailer.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="movies-list">
+        <h2 class="thor1 movie-size" onclick="handleVideoSrc('thor-video', 'trailers/Thor - Trailer.mp4')">Captain
+          America: The First Avenger</h2>
+        <h2 class="thor-ragnork movie-size" onclick="handleVideoSrc('thor-video', 'trailers/Thor_ Ragnarok.mp4')">
+          Captain America: Civil War</h2>
+        <h2 class="thor-darkworld movie-size" onclick="handleVideoSrc('thor-video', 'trailers/Thor_ Dark World.mp4')">
+          Captain America: The Winter Soldier
+        </h2>
+      </div>
+    </section>
+  </section>
+</body>
+
+<script src="carousel.js"></script>
+<script src="script.js"></script>
+
+</html>

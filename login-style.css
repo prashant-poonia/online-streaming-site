@@ -1,0 +1,67 @@
+body {
+  text-align: center;
+  background-image: url("login-signup-background/marvel-poster2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.login {
+  background-color: #2e2e2e;
+  color: #ffffff;
+  padding: 0.8rem 2rem 3.5rem 2rem;
+  width: 300px;
+  transform: translate(160%, 50%);
+}
+.login__heading {
+  font-weight: bold;
+  font-size: 0.8rem;
+  margin-bottom: 3rem;
+  letter-spacing: 1rem;
+}
+.login__email input {
+  margin-bottom: 2rem;
+  padding: 0.4rem 3rem 0.4rem 0.2rem;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  color: #ffffff;
+  background-color: #2e2e2e;
+}
+.login__password input {
+  margin-bottom: 3rem;
+  padding: 0.4rem 3rem 0.4rem 0.2rem;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  color: #ffffff;
+  background-color: #2e2e2e;
+}
+.login__btn {
+  margin-bottom: 1.5rem;
+}
+.login__btn a {
+  margin-bottom: 0.6rem;
+  padding: 0.5rem 1.5rem;
+  background-color: #ac1121;
+  outline: none;
+  color: #ffffff;
+  border: none;
+}
+.login__option-for-signup {
+  color: #ffffff;
+  font-size: 0.8rem;
+}
+
+.login__name input {
+  margin-bottom: 2rem;
+  padding: 0.4rem 3rem 0.4rem 0.2rem;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  color: #ffffff;
+  background-color: #2e2e2e;
+}
+.cross {
+  margin-bottom: 2.5rem;
+  margin-left: 19rem;
+  color: #ffffff;
+}
